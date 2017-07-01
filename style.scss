@@ -1,0 +1,332 @@
+@import './node_modules/foundation-sites/scss/foundation'; 
+@include foundation-global-styles;
+@include foundation-grid; 
+// @import "media-queries";
+
+body {
+    @include grid-row(); 
+    font-family: 'Roboto Condensed', sans-serif;
+
+    header {
+        @include grid-column(12); 
+        background-color: #4193c1; 
+        height: 15px; 
+
+        #bankName {
+            @include grid-column(4); 
+            padding-top: 0; 
+            line-height: 1; 
+
+            img {
+                width: 50px; 
+                height: 13px; 
+            }
+        }
+        
+        .navigation {
+            @include grid-column(8);
+            overflow: hidden; 
+            margin-top: 0; 
+            font-size: 1em; 
+
+            a {
+                float: right;
+                display: block;
+                color: white; 
+                text-align: center;
+                padding: 3px 3px;
+                text-decoration: none;
+                font-size: 6px;
+            }
+
+            a:hover {
+                background-color: #306c8e; 
+                color: white; 
+            }
+
+        }
+    }
+
+    .left {
+        @include grid-column(9); 
+        margin-top: 5px; 
+        padding-left: 30px; 
+        line-height: 1.2; 
+        // border: 1px solid black; 
+
+        #paraOne {
+            @include grid-column(12); 
+            padding-left: 0; 
+            padding-bottom: 0; 
+
+            h1 {
+                font-size: .7em; 
+                color: #670887; 
+            }
+
+            p {
+                font-size: 5px; 
+                margin-bottom: 1px; 
+            }
+
+            span {
+                color: #5479ff; 
+                text-decoration: underline; 
+            }
+
+        }
+
+        #paraTwo {
+            @include grid-column(12); 
+            padding-left: 0; 
+            margin-bottom: 6px; 
+
+            h3 {
+                font-size: 5px; 
+                margin-bottom: 0; 
+            }
+
+            ul {
+                margin-top: 0; 
+                margin-bottom: 1px; 
+                padding-top: 2px; 
+                padding-left: 10px; 
+            }
+
+            li {
+                font-size: 5px; 
+                line-height: 8px; 
+            }
+
+        }
+
+        #paraThree {
+            @include grid-column(12); 
+            background-color: #b1dbbe; 
+            position: relative; 
+            padding-left: 0; 
+            
+
+            #leftPhrase {
+                @include grid-column(10); 
+                padding-left: 4px; 
+                
+                h3 {
+                    color: #670887; 
+                    font-size: 6px; 
+                    margin-top: 2px; 
+                    margin-bottom: 1px; 
+                }
+
+                p {
+                    font-size: 5px; 
+                    margin-top: 0; 
+                }
+            }
+
+            #phoneImage {
+                img {
+                    margin-left: 0; 
+                    height: 50px;
+                    width: 30px; 
+                    position: absolute; 
+                    top: -1.7em;
+                }
+            }
+        }
+    }
+
+    .right {
+        @include grid-column(1); 
+        margin-top: 7px; 
+        padding-left: 0; 
+        width: 75px; 
+        height: 150px; 
+
+        #login {
+            height: 13px; 
+            color: white; 
+            background-color: #670887; 
+            font-size: 6px; 
+            width: 100%; 
+            padding: 5px; 
+            margin-bottom: 8px; 
+            }
+
+		.container{
+			width: 100%;
+			margin: 0 auto;
+            font-size: 4px; 
+		}
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: darkgray; 
+            color: #5479ff; 
+			display: inline-block;
+			padding: 3px 6px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 7px;
+            // margin-top: 1px; 
+		}
+
+		.tab-content.current{
+			display: inherit;
+            // margin-top: 1px; 
+		}
+
+        h3 {
+            margin-top: 0; 
+            margin-bottom: 0; 
+            color: #5479ff; 
+            font-size: 6px; 
+        }
+
+        p {
+            font-size: 5px; 
+            margin-top: 0; 
+            margin-bottom: 1px; 
+        }    
+    }
+
+    .bottom {
+        @include grid-column(12); 
+        margin-top: 5px; 
+        padding-left: 30px; 
+        line-height: 1.2; 
+    
+        p {
+            font-size: .7em; 
+            margin-top: 0; 
+        }
+
+        span {
+            color: #670887; 
+        }
+        
+            table {
+                width: 200px; 
+                font-size: 7px; 
+            }
+
+            th {
+                background-color: white; 
+                font-size: 4px; 
+                text-align: right;
+            }
+
+            tr:nth-child(odd) {
+                background-color: #f2ffed; 
+            }
+
+            tr:nth-child(even) {
+                background-color: #d2edc7; 
+            }
+
+            td {
+                padding: 3px; 
+            }
+
+            table, th, td {
+                border-collapse: collapse; 
+            }
+
+            .two, .three {
+                text-align: right; 
+            }
+
+        }
+
+        .footer {
+            @include grid-column(12); 
+            background-color: #ededed; 
+            width: 100%; 
+            height: 40px; 
+            margin-top: 25px; 
+            color: #5479ff; 
+
+            p {
+                @include grid-column(3); 
+                font-size: 6px; 
+                margin-top: 10px; 
+            }
+
+
+            .navigation {
+                @include grid-column(6);
+                // overflow: hidden; 
+                // margin-top: 0; 
+                font-size: 1em; 
+                 
+        
+                a {
+                    // float: right;
+                    // display: block;
+                    // color: black; 
+                    text-align: center;
+                    padding: 1px 2px;
+                    text-decoration: none;
+                    font-size: 6px;
+                    color: #5479ff;
+                }
+            }
+        }
+}
+
+@media (min-width: 768px) {
+
+    // header {
+    //     @include grid-column(12); 
+    //     background-color: #4193c1; 
+    //     height: 125px; 
+
+    //     #bankName {
+    //         @include grid-column(4); 
+    //         padding-top: 0; 
+    //         line-height: 1; 
+
+    //         img {
+    //             width: 50px; 
+    //             height: 13px; 
+    //         }
+    //     }
+        
+    //     .navigation {
+    //         @include grid-column(8);
+    //         overflow: hidden; 
+    //         margin-top: 0; 
+    //         font-size: 1em; 
+
+    //         a {
+    //             float: right;
+    //             display: block;
+    //             color: white; 
+    //             text-align: center;
+    //             padding: 3px 3px;
+    //             text-decoration: none;
+    //             font-size: 6px;
+    //         }
+
+    //         a:hover {
+    //             background-color: #306c8e; 
+    //             color: white; 
+    //         }
+
+    //     }
+    // }
+    background-color: red; 
+}
