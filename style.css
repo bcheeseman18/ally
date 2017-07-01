@@ -1514,6 +1514,7 @@ body {
       padding-left: 0.625rem;
       background-color: #b1dbbe;
       position: relative;
+      float: left;
       padding-left: 0; }
       @media print, screen and (min-width: 40em) {
         body .left #paraThree {
@@ -1627,17 +1628,22 @@ body {
     body .bottom th {
       background-color: white;
       font-size: 4px;
-      text-align: right; }
+      text-align: right;
+      padding: 3px; }
     body .bottom tr:nth-child(odd) {
       background-color: #f2ffed; }
     body .bottom tr:nth-child(even) {
       background-color: #d2edc7; }
-    body .bottom td {
-      padding: 3px; }
+    body .bottom .tableHead {
+      text-align: right;
+      background: white; }
+    body .bottom .tableName {
+      text-align: left; }
+    body .bottom .tableData {
+      padding: 3px;
+      text-align: right; }
     body .bottom table, body .bottom th, body .bottom td {
       border-collapse: collapse; }
-    body .bottom .two, body .bottom .three {
-      text-align: right; }
   body .footer {
     width: 100%;
     float: left;
@@ -1686,7 +1692,404 @@ body {
         font-size: 6px;
         color: #5479ff; }
 
-@media (min-width: 768px) {
-  background-color: red; }
+@media (min-width: 767px) {
+  body header {
+    height: 30px; }
+    body header #bankName {
+      padding-top: 2px;
+      line-height: 1;
+      margin-left: 30px; }
+      body header #bankName img {
+        width: 110px;
+        height: 25px; }
+    body header .navigation {
+      padding-right: 0; }
+      body header .navigation a {
+        padding: 5px 10px;
+        font-size: 12px; }
+  body .left {
+    margin-top: 15px;
+    padding-left: 40px;
+    line-height: 1.4; }
+    body .left #paraOne {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding-left: 0;
+      padding-bottom: 0; } }
+    @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+      body .left #paraOne {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+      body .left #paraOne:last-child:not(:first-child) {
+        float: right; }
+      body .left #paraOne h1 {
+        font-size: 1.5em;
+        color: #670887; }
+      body .left #paraOne p {
+        font-size: 11px;
+        margin-bottom: 1px; }
+    body .left #paraTwo {
+      width: 100%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      padding-left: 0;
+      margin-bottom: 6px; } }
+    @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+      body .left #paraTwo {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+      body .left #paraTwo:last-child:not(:first-child) {
+        float: right; }
+      body .left #paraTwo h3 {
+        font-size: 12px;
+        margin-bottom: 0; }
+      body .left #paraTwo ul {
+        margin-top: 0;
+        margin-bottom: 15px;
+        padding-top: 2px;
+        padding-left: 15px; }
+      body .left #paraTwo li {
+        font-size: 10px;
+        line-height: 15px; }
+    body .left #paraThree {
+      width: 500px;
+      height: 65px;
+      padding-left: 0;
+      margin-left: 150px; }
+      body .left #paraThree #leftPhrase {
+        width: 83.33333%;
+        float: left;
+        padding-right: 0.625rem;
+        padding-left: 0.625rem; } }
+      @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+        body .left #paraThree #leftPhrase {
+          padding-right: 0.9375rem;
+          padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+        body .left #paraThree #leftPhrase:last-child:not(:first-child) {
+          float: right; }
+        body .left #paraThree #leftPhrase h3 {
+          font-size: 12px;
+          margin-top: 8px;
+          margin-bottom: 3px; }
+        body .left #paraThree #leftPhrase p {
+          font-size: 12px;
+          margin-top: 0;
+          line-height: 1.4; }
+      body .left #paraThree #phoneImage img {
+        margin-left: 0;
+        height: 130px;
+        width: 80px;
+        top: -5em; }
+  body .right {
+    width: 8.33333%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin-top: 30px;
+    padding-left: 0;
+    width: 185px; } }
+  @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+    body .right {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+    body .right:last-child:not(:first-child) {
+      float: right; }
+    body .right #login {
+      height: 25px;
+      color: white;
+      background-color: #670887;
+      font-size: 15px;
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 20px; }
+    body .right .container {
+      width: 100%;
+      margin: 0 auto;
+      font-size: 12px; }
+    body .right ul.tabs {
+      margin: 0px;
+      padding: 0px;
+      list-style: none; }
+    body .right ul.tabs li.current {
+      background: #ededed;
+      color: #222; }
+    body .right .tab-content {
+      display: none;
+      background: #ededed;
+      padding: 7px; }
+    body .right .tab-content.current {
+      display: inherit; }
+    body .right h3 {
+      margin-top: 10px;
+      margin-bottom: 3px;
+      color: #5479ff;
+      font-size: 12px; }
+    body .right p {
+      font-size: 11px;
+      margin-top: 0;
+      margin-bottom: 15px; }
+  body .bottom {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin-top: 35px;
+    margin-left: 40px;
+    line-height: 1.2; } }
+  @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+    body .bottom {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+    body .bottom:last-child:not(:first-child) {
+      float: right; }
+    body .bottom p {
+      font-size: 1.3em;
+      margin-top: 0; }
+    body .bottom span {
+      color: #670887; }
+    body .bottom table {
+      width: 515px;
+      font-size: 15px; }
+    body .bottom .row {
+      font-size: 8px; }
+    body .bottom th {
+      font-size: 10px;
+      border: 1px solid black;
+      text-align: right; }
+    body .bottom .tableData {
+      text-align: right; }
+  body .footer {
+    height: 60px;
+    margin-top: 35px; }
+    body .footer p {
+      width: 25%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      font-size: 12px;
+      margin-top: 10px; } }
+    @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+      body .footer p {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+      body .footer p:last-child:not(:first-child) {
+        float: right; }
+    body .footer .navigation {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      margin-top: 5px;
+      font-size: 1em; } }
+    @media print and (min-width: 767px), screen and (min-width: 767px) and (min-width: 40em) {
+      body .footer .navigation {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 767px) {
+      body .footer .navigation:last-child:not(:first-child) {
+        float: right; }
+      body .footer .navigation a {
+        padding: 8px 12px;
+        font-size: 12px; } }
+@media (min-width: 1023px) {
+  body .left #paraOne h1 {
+    font-size: 2em;
+    color: #670887; }
+  body .left #paraOne p {
+    font-size: 15px; }
+  body .left #paraTwo h3 {
+    font-size: 16px; }
+  body .left #paraTwo li {
+    font-size: 15px;
+    line-height: 16px; }
+  body .left #paraThree {
+    margin-left: 0;
+    width: 500px;
+    height: 100px;
+    padding-left: 0;
+    margin-left: 150px; }
+    body .left #paraThree #leftPhrase {
+      width: 83.33333%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+    @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+      body .left #paraThree #leftPhrase {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+      body .left #paraThree #leftPhrase:last-child:not(:first-child) {
+        float: right; }
+      body .left #paraThree #leftPhrase h3 {
+        font-size: 16px;
+        margin-top: 8px;
+        margin-bottom: 3px; }
+      body .left #paraThree #leftPhrase p {
+        font-size: 15px;
+        margin-top: 0;
+        line-height: 1.4; }
+    body .left #paraThree #phoneImage img {
+      margin-left: 0;
+      height: 130px;
+      width: 80px;
+      top: -5em; }
+  body .bottom {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin-top: 35px;
+    margin-left: 40px;
+    line-height: 1.2; } }
+  @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+    body .bottom {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+    body .bottom:last-child:not(:first-child) {
+      float: right; }
+    body .bottom p {
+      font-size: 1.3em;
+      margin-top: 0; }
+    body .bottom span {
+      color: #670887; }
+    body .bottom table {
+      width: 700px;
+      font-size: 35px; }
+    body .bottom .row {
+      font-size: 20px; }
+    body .bottom th {
+      font-size: 10px;
+      border: 1px solid black;
+      text-align: right; }
+    body .bottom .tableData {
+      padding: 10px;
+      text-align: right; }
+  body .footer {
+    height: 60px;
+    margin-top: 35px; }
+    body .footer p {
+      width: 25%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      font-size: 12px;
+      margin-top: 10px; } }
+    @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+      body .footer p {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+      body .footer p:last-child:not(:first-child) {
+        float: right; }
+    body .footer .navigation {
+      width: 50%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      margin-top: 5px;
+      font-size: 1em; } }
+    @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+      body .footer .navigation {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+      body .footer .navigation:last-child:not(:first-child) {
+        float: right; }
+      body .footer .navigation a {
+        padding: 8px 12px;
+        font-size: 12px; }
+
+  body .left #paraThree {
+    margin-left: 0;
+    width: 835px;
+    height: 100px;
+    padding-left: 0;
+    margin-left: 150px; }
+    body .left #paraThree #leftPhrase {
+      width: 83.33333%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem; } }
+    @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+      body .left #paraThree #leftPhrase {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+      body .left #paraThree #leftPhrase:last-child:not(:first-child) {
+        float: right; }
+      body .left #paraThree #leftPhrase h3 {
+        font-size: 15px;
+        margin-top: 8px;
+        margin-bottom: 3px; }
+      body .left #paraThree #leftPhrase p {
+        font-size: 14px;
+        margin-top: 0;
+        line-height: 1.4; }
+    body .left #paraThree #phoneImage img {
+      margin-left: 0;
+      height: 130px;
+      width: 80px;
+      top: -5em; }
+  body .bottom {
+    width: 100%;
+    float: left;
+    padding-right: 0.625rem;
+    padding-left: 0.625rem;
+    margin-top: 35px;
+    margin-left: 40px;
+    line-height: 1.2; } }
+  @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+    body .bottom {
+      padding-right: 0.9375rem;
+      padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+    body .bottom:last-child:not(:first-child) {
+      float: right; }
+    body .bottom p {
+      font-size: 1.3em;
+      margin-top: 0; }
+    body .bottom span {
+      color: #670887; }
+    body .bottom table {
+      width: 835px;
+      font-size: 35px; }
+    body .bottom .row {
+      font-size: 20px; }
+    body .bottom th {
+      font-size: 10px;
+      border: 1px solid black;
+      text-align: right; }
+    body .bottom .tableData {
+      padding: 10px;
+      text-align: right; }
+  body .footer {
+    height: 60px;
+    margin-top: 35px; }
+    body .footer p {
+      width: 25%;
+      float: left;
+      padding-right: 0.625rem;
+      padding-left: 0.625rem;
+      font-size: 20px;
+      margin-top: 10px; } }
+    @media print and (min-width: 1023px), screen and (min-width: 1023px) and (min-width: 40em) {
+      body .footer p {
+        padding-right: 0.9375rem;
+        padding-left: 0.9375rem; } }
+@media (min-width: 1023px) {
+      body .footer p:last-child:not(:first-child) {
+        float: right; }
+    body .footer .navigation a {
+      font-size: 20px; } }
 
 /*# sourceMappingURL=style.css.map */
