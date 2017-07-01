@@ -1406,12 +1406,13 @@ body {
     body header:last-child:not(:first-child) {
       float: right; }
     body header #bankName {
-      width: 33.33333%;
+      width: 25%;
       float: left;
       padding-right: 0.625rem;
       padding-left: 0.625rem;
       padding-top: 0;
-      line-height: 1; }
+      line-height: 1;
+      margin-left: 10px; }
       @media print, screen and (min-width: 40em) {
         body header #bankName {
           padding-right: 0.9375rem;
